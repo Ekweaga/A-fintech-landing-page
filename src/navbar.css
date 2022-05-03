@@ -1,0 +1,37 @@
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+}
+.nav nav ul{
+    display:flex;
+    justify-content: space-around;
+}
+.nav ul li{
+    list-style: none;
+    margin-left:9px;
+    font-size: 12px;
+}
+.nav button{
+    background: transparent;
+    display:none;
+    color:white;
+    position: absolute;
+    right:10px;
+    top:15px;
+    background-color: bisque;
+    
+}
+@media(max-width:700px){
+    .nav{
+        height:70px;
+    }
+    .nav nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+}

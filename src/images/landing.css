@@ -1,0 +1,349 @@
+body,*{
+    
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+h1,h2{
+    font-size: 20px;
+}
+p{
+    font-size:12px;
+}
+.top{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    z-index: 222;
+    margin-top:30px;
+}
+.top .img{
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:30px;
+    width:600px;
+    height: 400px;
+}
+.top img{
+   width:500px;
+   height:400px;
+   margin-right:130px;
+   margin-top:50px;
+  
+}
+.top div{
+   width:40%;
+   margin:auto;
+   display:flex;
+   flex-direction: column;
+}
+.top div h1{
+    font-size:20px;
+}
+.top div p{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.top div button{
+    color:white;
+    background-color: rgb(6, 87, 23);
+    padding:15px;
+    border:none;
+    margin:15px;
+    border-radius: 15px;
+}
+
+.main{
+    background-color: #1a1c1f;
+ 
+    margin-top: -80px;
+    height:450px;
+}
+.main .why{
+    
+   margin:50px;
+   float:left;
+   width:60%;
+padding:20px;
+}
+.main .why p{
+    font-size: 15px;
+}
+.services{
+    display:flex;
+    background-color: #1a1c1f;
+  width:80%;
+   justify-content: center;
+    margin-top:10px;
+    
+}
+.services div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.services div{
+   
+    margin-right: 20px;
+  
+}
+.services div b{
+    text-align: center;
+    font-size: 16px;
+}
+.services div img{
+    width:60px;
+}
+.services div p{
+    font-size: 13px;
+}
+.articles{
+    margin-bottom:35px;
+}
+.articles .article{
+    display:flex;
+   padding-top:6px;
+   width: 100%;
+   margin: auto;
+  
+   
+}
+.article img{
+    width:250px;
+    height:180px;
+   
+}
+.articles .article div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:250px;
+    margin-right:20px;
+    background-color: rgb(32, 32, 32);
+    padding-top:0;
+}
+.articles .article div b{
+    text-align: center;
+    font-size: 14px;
+    padding:10px
+}
+
+.article div p{
+    font-size: 10px;
+    padding:10px;
+}
+.bottom{
+    background-color: black;
+    width:100%;
+   
+    padding:30px;
+}
+.bottom .last{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bottom ul{
+    margin:0;
+    padding:0;
+}
+.bottom ul li{
+    list-style: none;
+    font-size: 14px;
+    margin:10px;
+}
+.bottom .open{
+    display:flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+   
+}
+.bottom .open button{
+background-color:rgb(5, 99, 68);
+color:white;
+padding:10px;
+border:none;
+border-radius: 10px;
+margin:13px;
+width:150px;
+}
+.bottom .open span{
+    font-size: 12px;
+}
+@media(max-width:700px){
+    .top{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+       
+      margin-bottom: 130px;
+        z-index: 222;
+    }
+    .top .img{
+        width:400px;
+        margin:0px auto;
+        height: 600px;
+    }
+    
+    .top img{
+       width:350px;
+       height:500px;
+       
+    }
+    .top div{
+       width:85%;
+       margin:auto;
+       display:flex;
+       flex-direction: column;
+    }
+    .top div h1{
+        font-size:20px;
+    }
+    .top div p{
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .top div button{
+        color:white;
+        background-color: rgb(6, 87, 23);
+        padding:15px;
+        border:none;
+        border-radius: 15px;
+        margin:15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .main{
+        background-color: #1a1c1f;
+       
+      padding:39px;
+        margin-top: -80px;
+        height:1099px;
+    }
+    .main .why{
+        
+      
+        
+        width:100%;
+       
+        margin: 30px auto;
+    }
+    .main .why p{
+        font-size: 15px;
+    }
+    .services{
+        display:flex;
+        flex-direction: column;
+        background-color: #1a1c1f;
+         width:80%;
+       justify-content: center;
+        
+        margin:20px auto;
+      
+        
+    }
+    .services div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top:20px;
+       
+       
+      
+        
+    }
+    .services div{
+       
+        margin-right: 20px;
+      
+    }
+    .services div b{
+        text-align: center;
+        font-size: 16px;
+    }
+    .services div img{
+        width:60px;
+    }
+    .services div p{
+        font-size: 13px;
+    }
+    .articles .article{
+        display:block;
+       padding-top:6px;
+       width: 100%;
+       margin: auto;
+      
+       
+    }
+    .article img{
+        width:100%;
+        height:250px;
+        margin-bottom: 20px;
+    
+       
+    }
+    .articles .article div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:330px;
+        margin:20px;
+        background-color: rgb(32, 32, 32);
+        padding-top:0;
+        height: 350px;
+        padding-bottom: 45px;
+        margin-top:50px;
+    }
+    .articles .article div b{
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .article div p{
+        font-size: 10px;
+    }
+    .bottom .last{
+        background-color: black;
+        display:block;
+        width:80%;
+       
+        margin:auto;
+        
+    }
+    .bottom .open button{
+        background-color:rgb(5, 99, 68);
+        color:white;
+        padding:10px;
+        border:none;
+        border-radius: 10px;
+        margin:13px;
+        width:170px;
+        }
+    .bottom .last div{
+        margin-bottom:20px;
+        margin-top:15px;
+    }
+    .bottom .last li{
+        font-size: 18px;
+    }
+   
+}
+
+@media(width:360px){
+    .top div{
+        width:95%;
+        margin:auto;
+        display:flex;
+        flex-direction: column;
+     }
+}
