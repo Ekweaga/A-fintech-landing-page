@@ -30,7 +30,7 @@ function Navbar() {
         <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
             <img src={bg} style={{width:'30px'}}/>GoBank
         </div>
-        <nav>{(toggle || screenwidth > 500) && (<ul>
+        <nav>{/*(toggle || screenwidth > 500) && (<ul>
             <li style={{color:'white',textDecoration:'none'}}>
            Home
             </li>
@@ -46,7 +46,7 @@ function Navbar() {
          
           </ul>)}
         {close &&(<button className='ham' onClick={tooglenav}><img src={close} style={{width:'20px',height:'20px',cursor:'pointer'}}/></button>)}  
-        {open &&(<button className='close' onClick={toogleclose}> <img src={ham} style={{width:'20px',height:'20px',cursor:'pointer'}}/></button>)} 
+        {open &&(<button className='close' onClick={toogleclose}> <img src={ham} style={{width:'20px',height:'20px',cursor:'pointer'}}/></button>)*/} 
           </nav>
        
     </div>
