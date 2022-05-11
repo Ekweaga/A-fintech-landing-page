@@ -1,7 +1,7 @@
 import React ,{useState,useEffect} from 'react'
 import bg from './images/bg-intro-desktop.svg';
 import './navbar.css';
-import close from './images/icon-close.svg'
+import closes from './images/icon-close.svg'
 import ham from './images/icon-hamburger.svg'
 
 function Navbar() {
@@ -26,18 +26,20 @@ function Navbar() {
     window.addEventListener('resize',changewidth)
   },[])
   return (
-    <div className='nav'>
-        <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+    <>
+       
+        <nav>
+        <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginLeft:'50px'}}>
             <img src={bg} style={{width:'30px'}}/>GoBank
         </div>
-        <nav>{/*(toggle || screenwidth > 500) && (<ul>
-            <li style={{color:'white',textDecoration:'none'}}>
+          {(toggle || screenwidth > 500) && (<ul>
+            <li style={{textDecoration:'none'}}>
            Home
             </li>
-            <li style={{color:'white',textDecoration:'none'}}>
+            <li style={{textDecoration:'none'}}>
               Services
             </li>
-            <li style={{color:'white',textDecoration:'none'}}>
+            <li style={{textDecoration:'none'}}>
               Contact
             </li>
             <li>
@@ -45,11 +47,12 @@ function Navbar() {
             </li>
          
           </ul>)}
-        {close &&(<button className='ham' onClick={tooglenav}><img src={close} style={{width:'20px',height:'20px',cursor:'pointer'}}/></button>)}  
-        {open &&(<button className='close' onClick={toogleclose}> <img src={ham} style={{width:'20px',height:'20px',cursor:'pointer'}}/></button>)*/} 
+        {open &&(<button className='ham' onClick={toogleclose}><img src={closes} style={{width:'20px',height:'20px',cursor:'pointer'}}/></button>)}  
+        {close &&(<button className='close' onClick={tooglenav}> <img src={ham} style={{width:'20px',height:'20px',cursor:'pointer'}}/></button>)} 
           </nav>
        
-    </div>
+  
+   </>
       
   )
 }

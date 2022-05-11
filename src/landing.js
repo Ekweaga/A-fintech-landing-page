@@ -74,7 +74,7 @@ const Landing = () => {
         </div>
     </div>
     <div className='articles'>
-        <h2>Read Our Blog</h2>
+        <h2>Read Our Blog</h2><br/>
         <div className='article'>
         <div  data-aos="slide-left">
             <img src={confetti}/>

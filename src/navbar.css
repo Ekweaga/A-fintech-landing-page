@@ -1,38 +1,81 @@
-.nav{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
+
+ nav{
     width: 100%;
-    justify-content: space-around;
-    position: relative;
-    z-index: 2222;
+   
+    display: flex;
+    background-color: rgb(0, 0, 0);
+  
+    z-index: 22222;
+    justify-content: space-between;
+    align-items: center;
+    height:70px;
+   
+
 }
-.nav nav ul{
+ nav ul{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin:0;
+    padding:0;
 }
-.nav ul li{
+ nav ul li{
     list-style: none;
-    margin-left:9px;
+    margin:5px 15px;
     font-size: 12px;
-}
-.nav button{
-    background: transparent;
-    display:none;
     color:white;
+}
+
+ nav .ham{
+    background-color: transparent;
+   display:none;
     position: absolute;
     right:10px;
-    top:15px;
-    background-color: bisque;
-    
+    top:20px;
+    border:none;
+}
+ nav .close{
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top:20px;
+    display:none;
+    border:none;
 }
 @media(max-width:700px){
-    .nav{
+    nav{
         height:70px;
     }
-    .nav nav ul{
-        display: flex;
-        flex-direction: column;
+   
+     nav ul{
+        
+            width:300px;
+            height: 400px;
+            background-color: white;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top:150px;
+        
     }
+    nav .ham{
+        background-color: transparent;
+       display:block;
+        position: absolute;
+        right:10px;
+        top:20px;
+    }
+      
+       nav ul li{
+            color:black;
+            margin:20px;
+
+        }
+        
+       nav .close{
+            display:block;
+        }
+    
 }
